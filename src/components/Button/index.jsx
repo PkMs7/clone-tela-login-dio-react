@@ -1,4 +1,4 @@
-import ButtonContainer from './styles'
+import { ButtonContainer } from './styles'
 
 const Button = ({title, variant='primary', onClick}) => {
 
