@@ -24,7 +24,6 @@ const Header = () => {
                     <Menu>Global</Menu>
                 </Row>
                 <Row>
-                    <img src="" alt="Logo da DIO" />
                     <MenuRight href="#">Home</MenuRight>
                     <Button title="Entrar" />
                     <Button title="Cadastrar" />
