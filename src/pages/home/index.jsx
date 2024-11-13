@@ -6,9 +6,16 @@ import {
  } from "./styles";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
-import bannerImage from '../../assets/banner.png'
+import bannerImage from '../../assets/banner.png';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
+    const handleClickStart = () => {
+        navigate('/login')
+    }
 
     return(
         <>
@@ -26,7 +33,7 @@ const Home = () => {
                         Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novo
                         desafio profissional, evoluindo em comunidade com os melhores experts.
                     </TextContent>
-                    <Button title="Começar agora" variant="secondary" />
+                    <Button title="Começar agora" variant="secondary" onClick={handleClickStart} />
                 </div>
                 <div>
                     <img src={bannerImage} alt="Imagem principal" />

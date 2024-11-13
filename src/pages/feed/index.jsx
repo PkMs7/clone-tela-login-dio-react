@@ -2,11 +2,19 @@ import { Card } from '../../components/Card';
 import { UserInfo } from '../../components/UserInfo';
 import { Header } from '../../components/Header';
 import { Container, Column, Title, TitleHighlight } from './styles';
+import { useNavigate } from 'react-router-dom';
 
 const Feed = () => {
+
+  const navigate = useNavigate();
+
+  const handleClickHome = () => {
+      navigate('/')
+  }
+
   return (
     <>
-        <Header autenticado={true}/>
+        <Header autenticado={true} onClick={handleClickHome}/>
         <Container>
             <Column flex={3}>
                 <Title>Feed</Title>

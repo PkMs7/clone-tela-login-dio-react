@@ -11,13 +11,13 @@ import {
 } from "./styles";
 import logo from '../../assets/logo-dio.png'
 
-const Header = ({autenticado}) => {
+const Header = ({autenticado, onClick}) => {
 
     return(
         <Wrapper>
             <Container>
                 <Row>
-                    <img src={logo} alt="Logo da dio"/>
+                    <img src={logo} alt="Logo da dio" onClick={onClick}/>
                     {autenticado ? (
                         <>
                             <BuscarInputContainer>
