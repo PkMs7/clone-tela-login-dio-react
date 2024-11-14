@@ -9,7 +9,6 @@ export const InputContainer = styled.div`
 
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 
 `
 
@@ -26,5 +25,13 @@ export const InputText = styled.input`
     flex: 1;
     border: 0;
     height: 30px;
+
+`
+
+export const TextError = styled.p`
+
+    color: #FF0000;
+    font-size: 12px;
+    margin: 10px 0;
 
 `
