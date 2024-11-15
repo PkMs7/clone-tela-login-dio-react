@@ -9,6 +9,7 @@ export const InputContainer = styled.div`
 
     display: flex;
     align-items: center;
+    margin: 10px;
 
 `
 
